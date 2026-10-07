@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Bảng màu và font lấy từ design/stitch/notes.md */
+@theme inline {
+  --font-sans: var(--font-be-vietnam-pro), ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #0050cb;
+  --color-primary-soft: #dce6ff;
+  --color-surface: #f8f9ff;
+  --color-field: #eef2ff;
+  --color-ink: #191c20;
+  --color-muted: #424656;
+  --color-mint: #7befdd;
+  --color-mint-ink: #006b5e;
+  --color-danger: #ba1a1a;
+  --color-danger-soft: #ffeceb;
+
+  --shadow-card: 0 1px 2px rgb(25 28 32 / 0.04), 0 8px 24px rgb(0 80 203 / 0.06);
+}
+
+@layer base {
+  body {
+    background: var(--color-surface);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
